@@ -1,11 +1,9 @@
 :root {}
 
-@font-face {
+/* @font-face {
     font-family: Poppins;
     src: url(/css/font/Poppins);
-}
-
-
+} */
 
 /* Reset */
 *,
@@ -35,13 +33,15 @@ a:visited {
 
 /* Globals */
 
-
 /* Header */
-.header {
+.navbar {
     display: flex;
     justify-content: space-between;
     padding: 1rem;
+    font-size: 1.2rem;
+    box-shadow: -10px 1px 10px 1px gray;
 }
+
 
 /* Footer */
 
