@@ -1,0 +1,132 @@
+:root {
+    --accent-color: #0b5563;
+}
+
+/* Include Poppins font */
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Popping-Light.ttf') format('truetype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+/* Reset Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Popping', sans-serif;
+    font-weight: normal;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: bold;
+}
+
+p {
+    font-weight: 300;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Page Wrapper */
+.page-container {
+    padding: 50px 40px 60px;
+}
+
+
+/* Website Header */
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #666666;
+    box-shadow: 0 -1px 5px lightgray;
+
+}
+
+.site-header .logo {
+    color: #222222;
+}
+
+.site-header .mobile-menu-toggle {
+    background-color: inherit;
+    border: none;
+    color: inherit;
+    font-size: inherit;
+}
+
+.site-header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.site-logo {
+    width: 30px;
+    height: auto;
+    margin-right: 8px;
+}
+
+/* Website Footer */
+.site-footer {
+    background-color: #fcfcfc;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    padding: 15px 45px;
+    margin: 60px 0px 0px;
+    text-align: center;
+    font-size: 0.8rem;
+    border-top: 2px solid #f2f2f2;
+}
+
+.site-footer .footer-social {
+    margin: 12px 0px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.site-footer .footer-social-link {
+    display: inline-block;
+    opacity: 0.6;
+    padding: 0 10px;
+
+
+}
