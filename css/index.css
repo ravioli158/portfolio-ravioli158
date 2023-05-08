@@ -1,0 +1,36 @@
+.main-content {
+    padding-top: 2rem;
+    color: var(--text-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 1rem;
+}
+
+#home-photo {
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+    border: 14px solid #fff;
+    box-shadow: 0px 0px 5px 0px lightgray;
+}
+
+
+.home-photo-wrapper {
+    overflow: hidden;
+    padding: 0px 40px;
+
+}
+
+.home-text {
+    text-align: center;
+}
+
+.home-text h1{
+    color:var(--text-black);
+    margin-bottom: 1rem;
+}
+.home-text p {
+    font-size: 0.8rem;
+    line-height: 1.75em;
+}

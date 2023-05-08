@@ -1,94 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/main.css" />
-    <link rel="stylesheet" href="/css/index.css" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link href="/css/main.css" rel="stylesheet"/>
+    <link href="/css/index.css" rel="stylesheet"/>
     <!-- Font Awesome -->
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
-      integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+            crossorigin="anonymous"
+            integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow=="
+            referrerpolicy="no-referrer"
+            src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
     ></script>
     <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+            crossorigin="anonymous"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            referrerpolicy="no-referrer"
+            rel="stylesheet"
     />
 
     <title>Ravi Rathore</title>
-  </head>
-  <body>
-    <div class="page-container">
-      <header class="site-header" id="site-header">
+</head>
+<body>
+
+<div class="page-container">
+    <!--    Header-->
+    <header class="site-header" id="site-header">
         <!-- Logo -->
         <div class="logo">
-          <div class="logo-symbol">
-            <img class="site-logo" src="img/logo.svg" alt="website logo R" />
-          </div>
-          <div class="logo-text"><b>Ravi</b> Rathore</div>
+            <div class="logo-symbol">
+                <img alt="website logo R" class="site-logo" src="img/logo.svg"/>
+            </div>
+            <div class="logo-text"><b>Ravi</b> Rathore</div>
         </div>
 
         <!-- Navigation -->
         <nav class="site-nav"></nav>
 
         <!-- Mobile Toggle Button -->
-        <button class="mobile-menu-toggle" aria-label="togglel mobile menu">
-          <i class="fa-solid fa-bars"></i>
+        <button aria-label="toggle mobile menu" class="mobile-menu-toggle">
+            <i class="fa-solid fa-bars"></i>
         </button>
-      </header>
-      <!-- Main Content -->
-      <main class="main-content">
-        <div class="home-photo-wrapper">
-          <img
-            src="/img/profile-picture-640.jpg"
-            alt="Profile Picture"
-            srcset="
-              /img/profile-picture-640.jpg   640w,
-              /img/profile-picture-1280.jpg 1280w,
-              /img/profile-picture-1920.jpg 1920w,
-              /img/profile-picture-2560.jpg 2560w
-            "
-          />
-        </div>
-        <div class="home-text"></div>
-      </main>
-      <!-- Footer -->
-      <footer class="site-footer">
+    </header>
+
+    <!-- Main Content -->
+<!--    <main class="main-content">-->
+<!--        <div class="home-photo-wrapper">-->
+<!--            <img-->
+<!--                    alt="Profile Picture"-->
+<!--                    id="home-photo"-->
+<!--                    src="/img/profile-picture-320.jpg"-->
+<!--                    srcset="-->
+<!--              /img/profile-picture-320.jpg   320w,-->
+<!--              /img/profile-picture-425.jpg   425w,-->
+<!--              /img/profile-picture-640.jpg   640w,-->
+<!--              /img/profile-picture-1280.jpg 1280w,-->
+<!--              /img/profile-picture-1920.jpg 1920w,-->
+<!--              /img/profile-picture-2560.jpg 2560w-->
+<!--            "-->
+<!--            />-->
+<!--        </div>-->
+<!--        <div class="home-text">-->
+<!--            <h1>Software Developer</h1>-->
+<!--            <p>-->
+<!--                Namaste! I'm a Full stack developer with a passion for JavaScript, Node.js, SQL, and all things Unix.-->
+<!--                When I'm not coding, you can-->
+<!--                find me hiking in the great outdoors or building elaborate factories-->
+<!--                in Factorio. Nice to meet you!-->
+<!--            </p>-->
+<!--            <p>-->
+<!--                Namaste! I'm a Full stack developer with a passion for JavaScript, Node.js, SQL, and all things Unix.-->
+<!--                When I'm not coding, you can-->
+<!--                find me hiking in the great outdoors or building elaborate factories-->
+<!--                in Factorio. Nice to meet you!-->
+<!--            </p>-->
+<!--            <p>-->
+<!--                Namaste! I'm a Full stack developer with a passion for JavaScript, Node.js, SQL, and all things Unix.-->
+<!--                When I'm not coding, you can-->
+<!--                find me hiking in the great outdoors or building elaborate factories-->
+<!--                in Factorio. Nice to meet you!-->
+<!--            </p>-->
+<!--            <a class="btn" href="#" target="_blank">Download CV</a>-->
+<!--        </div>-->
+<!--    </main>-->
+    <!-- Footer -->
+    <footer class="site-footer">
         <div class="footer-social">
-          <ul class="footer-social">
-            <li class="footer-social-link">
-              <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Twitter</a
-              >
-            </li>
-            <li class="footer-social-link">
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Instagram</a
-              >
-            </li>
-            <li class="footer-social-link">
-              <a
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                >LinkedIn</a
-              >
-            </li>
-          </ul>
+            <ul class="footer-social">
+                <li class="footer-social-link">
+                    <a
+                            href="https://twitter.com"
+                            rel="noopener noreferrer"
+                            target="_blank"
+                    >Twitter</a
+                    >
+                </li>
+                <li class="footer-social-link">
+                    <a
+                            href="https://instagram.com"
+                            rel="noopener noreferrer"
+                            target="_blank"
+                    >Instagram</a
+                    >
+                </li>
+                <li class="footer-social-link">
+                    <a
+                            href="https://linkedin.com"
+                            rel="noopener noreferrer"
+                            target="_blank"
+                    >LinkedIn</a
+                    >
+                </li>
+            </ul>
         </div>
-      </footer>
-    </div>
-  </body>
+    </footer>
+</div>
+
+</body>
 </html>

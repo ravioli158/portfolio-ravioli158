@@ -1,5 +1,12 @@
 :root {
     --accent-color: #0b5563;
+    --text-black: #333333;
+    --text-light: #666666;
+    -breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
 }
 
 /* Include Poppins font */
@@ -11,7 +18,7 @@
 
 @font-face {
     font-family: 'Poppins';
-    src: url('fonts/Popping-Light.ttf') format('truetype');
+    src: url('fonts/Poppins-Light.ttf') format('truetype');
     font-weight: 300;
 }
 
@@ -29,6 +36,11 @@
 }
 
 /* Global Styles */
+html,
+body {
+    height: 100%;
+}
+
 body {
     font-family: 'Popping', sans-serif;
     font-weight: normal;
@@ -58,7 +70,10 @@ a {
 
 /* Page Wrapper */
 .page-container {
-    padding: 50px 40px 60px;
+    position: relative;
+    min-height: 100%;
+    background-color: #f5f5f5;
+    padding-top: 3rem;
 }
 
 
@@ -77,7 +92,8 @@ a {
     font-size: 1.2rem;
     color: #666666;
     box-shadow: 0 -1px 5px lightgray;
-
+    background-color: white;
+    height: 3rem;
 }
 
 .site-header .logo {
@@ -104,20 +120,20 @@ a {
 
 /* Website Footer */
 .site-footer {
-    background-color: #fcfcfc;
-    position: fixed;
+    position: absolute;
     bottom: 0;
-    width: 100%;
     left: 0;
+    width: 100%;
     padding: 15px 45px;
-    margin: 60px 0px 0px;
+    margin: 60px 0 0;
+    background-color: #fcfcfc;
     text-align: center;
     font-size: 0.8rem;
     border-top: 2px solid #f2f2f2;
 }
 
 .site-footer .footer-social {
-    margin: 12px 0px;
+    margin: 12px 0;
     text-align: center;
     display: flex;
     justify-content: space-around;
@@ -128,5 +144,14 @@ a {
     opacity: 0.6;
     padding: 0 10px;
 
+}
 
+/* Button */
+btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: center;
+    user-select: none;
 }
