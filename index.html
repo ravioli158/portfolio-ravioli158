@@ -13,6 +13,9 @@
             referrerpolicy="no-referrer"
             src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"
     ></script>
+    <!--    Typed.js-->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
     <link
             crossorigin="anonymous"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -44,47 +47,40 @@
             <i class="fa-solid fa-bars"></i>
         </button>
     </header>
+    <!--    Main-->
+    <main class="index-main">
+        <article class="index-content">
+            <!--            Profile Picture in circular frame with thick border-->
+            <div class="picture-wrapper">
+                <div class="profile-picture">
+                    <img
+                            alt="Profile Picture"
+                            id="home-photo"
+                            src="/img/profile-picture-320.jpg"
+                            srcset="
+                              /img/profile-picture-320.jpg   320w,
+                              /img/profile-picture-425.jpg   425w,
+                              /img/profile-picture-640.jpg   640w,
+                              /img/profile-picture-1280.jpg 1280w,
+                              /img/profile-picture-1920.jpg 1920w,
+                              /img/profile-picture-2560.jpg 2560w
+                            "
+                    />
+                </div>
+            </div>
+            <!--            About me description-->
+            <div class="text-wrapper">
+                <h1 class="profile-title">Turning Ideas into Digital Solutions</h1>
+                <div class="text-editor-wrap">
+                    <div class="editor-title"></div>
+                    <div class="editor-body"><span>$ </span>
+                        <span class="profile-text" id="profile-text"></span></div>
 
-    <!-- Main Content -->
-<!--    <main class="main-content">-->
-<!--        <div class="home-photo-wrapper">-->
-<!--            <img-->
-<!--                    alt="Profile Picture"-->
-<!--                    id="home-photo"-->
-<!--                    src="/img/profile-picture-320.jpg"-->
-<!--                    srcset="-->
-<!--              /img/profile-picture-320.jpg   320w,-->
-<!--              /img/profile-picture-425.jpg   425w,-->
-<!--              /img/profile-picture-640.jpg   640w,-->
-<!--              /img/profile-picture-1280.jpg 1280w,-->
-<!--              /img/profile-picture-1920.jpg 1920w,-->
-<!--              /img/profile-picture-2560.jpg 2560w-->
-<!--            "-->
-<!--            />-->
-<!--        </div>-->
-<!--        <div class="home-text">-->
-<!--            <h1>Software Developer</h1>-->
-<!--            <p>-->
-<!--                Namaste! I'm a Full stack developer with a passion for JavaScript, Node.js, SQL, and all things Unix.-->
-<!--                When I'm not coding, you can-->
-<!--                find me hiking in the great outdoors or building elaborate factories-->
-<!--                in Factorio. Nice to meet you!-->
-<!--            </p>-->
-<!--            <p>-->
-<!--                Namaste! I'm a Full stack developer with a passion for JavaScript, Node.js, SQL, and all things Unix.-->
-<!--                When I'm not coding, you can-->
-<!--                find me hiking in the great outdoors or building elaborate factories-->
-<!--                in Factorio. Nice to meet you!-->
-<!--            </p>-->
-<!--            <p>-->
-<!--                Namaste! I'm a Full stack developer with a passion for JavaScript, Node.js, SQL, and all things Unix.-->
-<!--                When I'm not coding, you can-->
-<!--                find me hiking in the great outdoors or building elaborate factories-->
-<!--                in Factorio. Nice to meet you!-->
-<!--            </p>-->
-<!--            <a class="btn" href="#" target="_blank">Download CV</a>-->
-<!--        </div>-->
-<!--    </main>-->
+                </div>
+                <a class="btn mt-1" href="#" target="_blank">Download CV</a>
+            </div>
+        </article>
+    </main>
     <!-- Footer -->
     <footer class="site-footer">
         <div class="footer-social">
@@ -117,6 +113,16 @@
         </div>
     </footer>
 </div>
-
+<!--   Types.Js script-->
+<script>
+    var typedText = new Typed('#profile-text', {
+        strings: ["Namaste! I'm a Full Stack Developer.", "with a passion for JavaScript, Node.js, SQL, and all things Unix.", "When I'm not coding, you can find me hiking in the great outdoors or building elaborate factories in Factorio."],
+        typeSpeed: 50,
+        showCursor: true,
+        startDelay: 2000,
+        contentType: 'html',
+        loop: true,
+    });
+</script>
 </body>
 </html>

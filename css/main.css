@@ -38,6 +38,7 @@
 /* Global Styles */
 html,
 body {
+    font-size: 14px;
     height: 100%;
 }
 
@@ -68,12 +69,17 @@ a {
     color: inherit;
 }
 
+.mt-1 {
+    margin-top: 1rem;
+}
+
 /* Page Wrapper */
 .page-container {
     position: relative;
     min-height: 100%;
     background-color: #f5f5f5;
-    padding-top: 3rem;
+    padding: 4rem 40px 8rem;
+    overflow: auto;
 }
 
 
@@ -93,7 +99,7 @@ a {
     color: #666666;
     box-shadow: 0 -1px 5px lightgray;
     background-color: white;
-    height: 3rem;
+    height: 4rem;
 }
 
 .site-header .logo {
@@ -147,11 +153,31 @@ a {
 }
 
 /* Button */
-btn {
+.btn {
+    background-color: white;
+    color: #222;
+    padding: 12px 35px;
     display: inline-block;
     font-weight: 400;
     text-align: center;
     white-space: nowrap;
     vertical-align: center;
     user-select: none;
+    border: 2px solid var(--accent-color);
+    border-radius: 30px;
+    box-shadow: 1px 1px 5px 0 darkgray;
+}
+
+@media screen and (min-width: 768px) {
+    .page-container {
+        height: 100%;
+    }
+    .index-main {
+        height: 100%;
+    }
+
+    .footer-social
+    {
+        font-size: 1.2rem;
+    }
 }
