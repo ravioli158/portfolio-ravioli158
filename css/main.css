@@ -14,18 +14,21 @@
     font-family: 'Poppins';
     src: url('fonts/Poppins-Regular.ttf') format('truetype');
     font-weight: normal;
+    font-display: fallback;
 }
 
 @font-face {
     font-family: 'Poppins';
     src: url('fonts/Poppins-Light.ttf') format('truetype');
     font-weight: 300;
+    font-display: fallback;
 }
 
 @font-face {
     font-family: 'Poppins';
     src: url('fonts/Poppins-Bold.ttf') format('truetype');
     font-weight: bold;
+    font-display: fallback;
 }
 
 /* Reset Styles */
@@ -190,7 +193,7 @@ a {
 
 /* Button */
 .btn {
-    background-color: white;
+    background-color: inherit;
     color: #222;
     padding: 12px 35px;
     display: inline-block;
@@ -202,6 +205,36 @@ a {
     border: 2px solid var(--accent-color);
     border-radius: 30px;
     box-shadow: 1px 1px 5px 0 darkgray;
+}
+
+/* Form Controls*/
+.form-group {
+    position: relative;
+    margin: 0 0 1rem;
+}
+
+.form-control {
+    width: 100%;
+    position: relative;
+    border: 2px solid #bfbfbf;
+    border-radius: 5px;
+    display: block;
+    font-size: 1em;
+    margin: 0;
+    padding: 10px 25px 10px 12px;
+    text-align: left;
+    color: inherit;
+    background: 0 0;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.form-control:focus-visible, .form-control:focus
+{
+border:2px solid var(--accent-color);
+}
+/* TODO: Problem with Border color animations*/
+
+.help-error{
+
 }
 
 /* Tablet and above*/
@@ -236,14 +269,13 @@ a {
 
     /*Show nav in header */
     .site-nav {
-        text-align: right   ;
+        text-align: right;
         position: static;
         width: 100%;
         background-color: inherit;
     }
 
-    .nav-link
-    {
+    .nav-link {
         display: inline-block;
     }
 
