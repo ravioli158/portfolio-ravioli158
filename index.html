@@ -6,6 +6,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <link href="css/main.css" rel="stylesheet"/>
     <link href="css/index.css" rel="stylesheet"/>
+    <script src="js/main.js"></script>
     <!-- Font Awesome -->
     <script
             crossorigin="anonymous"
@@ -40,10 +41,19 @@
         </div>
 
         <!-- Navigation -->
-        <nav class="site-nav"></nav>
+        <nav class="site-nav" id="site-nav">
+            <ul class="nav-links">
+                <li class="nav-link"><a href="" target="_parent">About Me</a></li>
+                <li class="nav-link"><a href="" target="_parent">Resume</a></li>
+                <!--                TODO: Add Portfolio of projects-->
+                <li class="nav-link"><a href="" target="_parent">Portfolio</a></li>
+                <li class="nav-link"><a href="" target="_parent">Blog</a></li>
+                <li class="nav-link"><a href="contact.html" target="_parent">Contact</a></li>
+            </ul>
+        </nav>
 
         <!-- Mobile Toggle Button -->
-        <button aria-label="toggle mobile menu" class="mobile-menu-toggle">
+        <button aria-label="toggle mobile menu" class="mobile-menu-toggle" onclick="toggleMobileMenu()">
             <i class="fa-solid fa-bars"></i>
         </button>
     </header>
@@ -115,7 +125,7 @@
 </div>
 <!--   Types.Js script-->
 <script>
-    var typedText = new Typed('#profile-text', {
+    const typedText = new Typed('#profile-text', {
         strings: ["Namaste! I'm a Full Stack Developer.", "with a passion for JavaScript, Node.js, SQL, and all things Unix.", "When I'm not coding, you can find me hiking in the great outdoors or building elaborate factories in Factorio."],
         typeSpeed: 50,
         showCursor: true,

@@ -95,7 +95,7 @@ a {
     justify-content: space-between;
     align-content: center;
     padding: 10px 20px;
-    font-size: 1.2rem;
+    font-size: 1.28rem;
     color: #666666;
     box-shadow: 0 -1px 5px lightgray;
     background-color: white;
@@ -124,6 +124,42 @@ a {
     margin-right: 8px;
 }
 
+.site-nav {
+    /*Disable horizontal scrolling*/
+    overflow-x: hidden;
+    position: fixed;
+    top: 4rem;
+    width: 0;
+    right: 0;
+    height: 100%;
+    background-color: #fff;
+    transition: all 0.5s;
+    z-index: 99;
+    box-shadow: 0 0 70px 0 rgba(80, 45, 45, 0.08);
+}
+
+.nav-links {
+    list-style: none;
+
+    margin: 0 30px;
+    color: var(--text-black)
+}
+
+
+.show-nav {
+    width: 75%;
+}
+
+.nav-link {
+    font-size: 1rem;
+    color: var(--text-light);
+    margin-right: 40px;
+}
+
+.nav-link a {
+    line-height: 3.3rem;
+}
+
 /* Website Footer */
 .site-footer {
     position: absolute;
@@ -134,7 +170,7 @@ a {
     margin: 60px 0 0;
     background-color: #fcfcfc;
     text-align: center;
-    font-size: 0.8rem;
+    font-size: 1rem;
     border-top: 2px solid #f2f2f2;
 }
 
@@ -168,16 +204,51 @@ a {
     box-shadow: 1px 1px 5px 0 darkgray;
 }
 
+/* Tablet and above*/
 @media screen and (min-width: 768px) {
     .page-container {
         height: 100%;
     }
+
+    /*Header*/
+    .show-nav {
+        width: 35%;
+    }
+
+    /*Main Content*/
     .index-main {
         height: 100%;
     }
 
-    .footer-social
+    /*Footer*/
+    .footer-social {
+        font-size: 1rem;
+    }
+}
+
+/* Laptop and above*/
+@media screen and (min-width: 1024px) {
+    /*    Header */
+    .site-header {
+        position: absolute;
+        font-size: 1.5rem;
+    }
+
+    /*Show nav in header */
+    .site-nav {
+        text-align: right   ;
+        position: static;
+        width: 100%;
+        background-color: inherit;
+    }
+
+    .nav-link
     {
-        font-size: 1.2rem;
+        display: inline-block;
+    }
+
+
+    .mobile-menu-toggle {
+        display: none;
     }
 }
